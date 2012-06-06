@@ -24,16 +24,16 @@ public class SortingAlgorithmsTest {
 	
 	
 	@Test
-	public void shouldSortListInDescendingOrder(){
+	public void shouldSortListInAscendingOrder(){
 		SortingAlgorithm sortingAlgorithm = new QuickSort();
 		
 		List<Integer> sortedList = sortingAlgorithm.sort(listToBeSorted);
 		List<Integer> expectedList = new ArrayList<Integer>();
-		expectedList.add(5);
-		expectedList.add(4);
-		expectedList.add(3);
-		expectedList.add(2);
 		expectedList.add(1);
+		expectedList.add(2);
+		expectedList.add(3);
+		expectedList.add(4);
+		expectedList.add(5);
 		assertTrue("The sorting algorithm should have sorted the list as expected:" + 
 				expectedList + ", actual: " +  sortedList, expectedList.equals(sortedList));
 		
